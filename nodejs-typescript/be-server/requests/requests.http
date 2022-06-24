@@ -1,0 +1,43 @@
+
+GET http://localhost:8080/systemInfo
+Authorization: 0lv7qnzgsq1
+
+###
+
+DELETE http://localhost:8080/users?id=abc125
+Authorization: 17fnu8qqe6yj
+
+###
+GET http://localhost:8080/users?name=Moeen
+Authorization: 0lv7qnzgsq1
+
+###
+
+PUT http://localhost:8080/users
+Content-Type: application/json
+Authorization: fkv623bllf6
+
+{
+  "name": "Nasir Khan",
+  "dateOfBirth": "1995-12-05 00:00:00",
+  "email": "nasirkhan@gmail.com",
+  "workingPosition": "PSE"
+}
+
+
+###
+
+GET http://localhost:8080/users?id=abc123
+Authorization: 0lv7qnzgsq1
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "username": "moeenaslam",
+  "password": "password1"
+}
+
+
